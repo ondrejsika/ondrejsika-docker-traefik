@@ -1,14 +1,9 @@
-version: "3.8"
+version: "3.6"
 services:
-  nginx:
+  example:
     image: nginx
     networks:
       - traefik
-    labels:
-      # For Docker Compose Traefik Deployment (single node)
-      - "traefik.enable=true"
-      - "traefik.http.routers.${ROUTER_NAME:-nginx}.rule=Host(`${HOST:-nginx-127-0-0-1.nip.io}`)"
-      # - "traefik.http.routers.${ROUTER_NAME:-nginx}.entrypoints=http,https"
 
 networks:
   traefik:
