@@ -1,3 +1,4 @@
 !.keep
 acme-data/**
 .env
+.cloudflare.env
