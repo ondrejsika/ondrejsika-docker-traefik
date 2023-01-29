@@ -1,7 +1,7 @@
 version: "3.6"
 services:
   example:
-    image: ondrejsika/go-hello-world:2
+    image: sikalabs/hello-world-server:v0.6.0
     networks:
       - traefik
 
