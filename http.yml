@@ -1,4 +1,5 @@
 version: "3.8"
+name: traefik
 services:
   traefik:
     image: traefik:2.2
