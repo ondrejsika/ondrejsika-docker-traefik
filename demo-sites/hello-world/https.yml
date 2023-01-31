@@ -3,8 +3,8 @@ services:
   example:
     labels:
       # For Docker Compose Traefik Deployment (single node)
-      - "traefik.enable=true"
-      - "traefik.http.services.${ROUTER_NAME:-hello-world}.loadbalancer.server.port=8000"
-      - "traefik.http.routers.${ROUTER_NAME:-hello-world}.rule=Host(`${HOST:-hello-127-0-0-1.nip.io}`)"
-      - "traefik.http.routers.${ROUTER_NAME:-hello-world}.entrypoints=http,https"
-      - "traefik.http.routers.${ROUTER_NAME:-hello-world}.tls.certresolver=le"
+      - traefik.enable=true
+      - traefik.http.services.${ROUTER_NAME:-hello-world}.loadbalancer.server.port=8000
+      - traefik.http.routers.${ROUTER_NAME:-hello-world}.rule=Host(`${HOST:-hello-127-0-0-1.nip.io}`)
+      - traefik.http.routers.${ROUTER_NAME:-hello-world}.entrypoints=http,https
+      - traefik.http.routers.${ROUTER_NAME:-hello-world}.tls.certresolver=le
