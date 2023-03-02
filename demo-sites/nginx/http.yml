@@ -1,7 +1,7 @@
 version: "3.6"
 services:
-  example:
+  nginx:
     labels:
       # For Docker Compose Traefik Deployment (single node)
       - traefik.enable=true
-      - traefik.http.routers.${ROUTER_NAME:-nginx}.rule=Host(`${HOST:-nginx-127-0-0-1.nip.io}`)
+      - traefik.http.routers.nginx.rule=Host(`${HOST:-nginx-127-0-0-1.nip.io}`)

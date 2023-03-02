@@ -1,6 +1,6 @@
 version: "3.6"
 services:
-  example:
+  hello-world:
     image: sikalabs/hello-world-server:v0.6.0
     networks:
       - traefik
