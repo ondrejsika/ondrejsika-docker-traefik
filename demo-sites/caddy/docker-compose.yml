@@ -1,0 +1,11 @@
+version: "3.6"
+services:
+  caddy:
+    image: caddy
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external:
+      name: traefik
