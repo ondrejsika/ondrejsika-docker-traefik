@@ -4,6 +4,8 @@ services:
     image: sikalabs/hello-world-server:v0.6.0
     networks:
       - traefik
+    deploy:
+      replicas: 4
 
 networks:
   traefik:
