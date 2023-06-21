@@ -1,3 +1,6 @@
+up:
+	docker compose up -d
+
 use-http:
 	echo COMPOSE_FILE=docker-compose.http.yml > .env
 
