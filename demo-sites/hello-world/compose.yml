@@ -1,6 +1,6 @@
 services:
   hello-world:
-    image: sikalabs/hello-world-server:v0.6.0
+    image: sikalabs/hello-world-server:v0.10.0
     networks:
       - traefik
     deploy:
