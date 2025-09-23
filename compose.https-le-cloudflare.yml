@@ -1,7 +1,7 @@
 name: traefik
 services:
   traefik:
-    image: traefik:3.2
+    image: traefik:3.5
     command:
       - --accesslog
       - --metrics.prometheus=true
