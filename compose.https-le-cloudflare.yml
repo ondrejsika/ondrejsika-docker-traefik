@@ -13,6 +13,7 @@ services:
       - --entrypoints.http.http.redirections.entryPoint.to=https
       - --entrypoints.http.http.redirections.entryPoint.scheme=https
       - --entrypoints.https.address=:443
+      - --entrypoints.https.http.tls.certresolver=le
       - --certificatesresolvers.le.acme.dnschallenge.provider=cloudflare
       - --certificatesresolvers.le.acme.email=le@sikademo.com
       - --certificatesresolvers.le.acme.storage=/letsencrypt/acme.json
