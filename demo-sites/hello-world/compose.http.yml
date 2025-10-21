@@ -1,7 +1,0 @@
-services:
-  hello-world:
-    labels:
-      # For Docker Compose Traefik Deployment (single node)
-      - traefik.enable=true
-      - traefik.http.services.hello-world.loadbalancer.server.port=8000
-      - traefik.http.routers.hello-world.rule=Host(`${HOST:-hello-127-0-0-1.nip.io}`)
