@@ -4,7 +4,6 @@ services:
     networks:
       - traefik
     labels:
-      # For Docker Compose Traefik Deployment (single node)
       - traefik.enable=true
       - traefik.http.routers.caddy.rule=Host(`${HOST:-caddy-127-0-0-1.nip.io}`)
 

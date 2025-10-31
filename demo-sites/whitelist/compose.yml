@@ -8,7 +8,6 @@ services:
     deploy:
       replicas: 4
     labels:
-      # For Docker Compose Traefik Deployment (single node)
       - traefik.enable=true
       - traefik.http.services.whitelist.loadbalancer.server.port=8000
       - traefik.http.routers.whitelist.rule=Host(`${HOST:-whitelist-127-0-0-1.nip.io}`)
