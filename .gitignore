@@ -3,3 +3,4 @@ acme-data/**
 .env
 .cloudflare.env
 .DS_Store
+compose.override.yaml
